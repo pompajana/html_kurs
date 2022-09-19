@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
     <title>Form</title>
   </head>
   <body>
+    
     <form action="/form-mainpage" method="post">
+      <h1>Wypełnij formularz, aby rozpocząć naukę!</h1>
       <ul>
         <li>
-          <label for="name">Imię</label>
+          <label for="name">Imię</label><br>
           <input
             type="text"
             id="name"
@@ -19,7 +22,7 @@
           />
         </li>
         <li>
-          <label for="surname">Nazwisko</label>
+          <label for="surname">Nazwisko</label><br>
           <input
             type="text"
             id="surname"
@@ -28,7 +31,7 @@
           />
         </li>
         <li>
-          <label for="email">E-mail</label>
+          <label for="email">E-mail</label><br>
           <input
             type="email"
             id="email"
@@ -37,7 +40,7 @@
           />
         </li>
         <li>
-          <label for="phone">Telefon</label>
+          <label for="phone">Telefon</label><br>
           <input
             type="tel"
             id="phone"
@@ -48,7 +51,7 @@
         </li>
 
         <li>
-          <label for="sex">Płeć</label>
+          <label for="sex">Płeć</label><br>
           <select name="sex" id="sex">
             <option value="woman">Kobieta</option>
             <option value="man">Mężczyzna</option>
@@ -56,36 +59,37 @@
           </select>
         </li>
         <li>
-          <p>Wybierz województwo, w którym mieszkasz:</p>
+          <label for="region_id">Wybierz województwo, w którym mieszkasz:</label><br>
 
-          <input
+          <input 
             type="radio"
             id="region_1"
-            name="region_1"
+            name="region"
             value="pomorskie"
-          /><label for="region">Pomorskie</label><br />
+          /><span for="region">Pomorskie</span><br />
 
-          <input
+          <input 
             type="radio"
             id="region_2"
-            name="region_2"
+            name="region"
             value="mazowieckie"
-          /><label for="region">Mazowieckie</label><br />
+          /><span for="region">Mazowieckie</span><br />
 
-          <input
+          <input 
             type="radio"
             id="region_3"
-            name="region_3"
+            name="region"
             value="malopolskie"
-          /><label for="region">Małopolskie</label>
+          /><span for="region">Małopolskie</span>
         </li>
         <li>
-          <p>Napisz swoje uwagi</p>
+          <label for="desc">Napisz swoje uwagi</label><br>
           <textarea rows="4" cols="50" placeholder="Napisz co myślisz..."></textarea>
           </textarea>
         </li>
+        <li><input type="submit" value="Submit"></li>
       </ul>
-      <input type="submit" value="Submit">
+      
     </form>
   </body>
 </html>

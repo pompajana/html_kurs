@@ -1,0 +1,45 @@
+h1 {
+  font-size: large;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: gainsboro;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: fit-content;
+}
+li {
+  display: block;
+  padding: 12px;
+}
+
+input,
+select,
+textarea {
+  width: 80%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: auto;
+}
+
+label {
+  font-weight: 600;
+}
+input[type="radio"] {
+  width: 10%;
+}
+
+input[type="radio"]:checked + * {
+  color: rgb(11, 189, 64);
+  font-weight: 600;
+}
